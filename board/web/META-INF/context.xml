@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Context>
+    <!--java con invitament로 불러오는 자리-->
+    <!--대소문자 중요 오타 절대 XXXX-->
+    <!--factoty : 우물 뚫어줄것 톰켓임-->
+    <Resource name="jdbc/MariaDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="kb"
+              password="1111"
+              driverClassName="org.mariadb.jdbc.Driver"
+              factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+              url="jdbc:mariadb://bzu.co.kr:3306/kb?serverTimezone=UTC"
+
+    />
+</Context>

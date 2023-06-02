@@ -1,0 +1,182 @@
+
+1/ 자바 (java)
+
+자바17검색 아래에서 두번째 윈도우 Windows x64 Installer 설치 153.22MB
+
+
+
+자바 이클립스
+
+구글- tcpschool.com (공부참고사이트)
+
+
+
+
+구글
+자바
+자바오라클
+자바다운로드
+윈도우
+x64 installer 다운로드
+설치
+로컬디스크c java
+내pc 우클릭 속성 
+고급시스템 설정
+환경변수
+새로만들기
+ 변수이름 JAVA_HOME
+ 변수 값   -> C 드라이브 / program files / java / jdk-20
+                의 주소값 복사 붙여넣기
+새로만들기
+ 변수이름 CLASSPATH
+ 변수 값   %JAVA_HOME%\lib
+
+시스템 변수 -> Path 더블클릭 -> 새로만들기 ->%JAVA_HOME%\bin -> 맨위로 이동후 확인
+
+
+찾기창에서 cmd -> 명령 프롬프트 -> java -version 입력 하면 입력확인됨
+
+
+
+
+2/이클립스
+
+노란색 이클립스 
+
+왼쪽 다운로드 노란마크 ->다운로드 ->프로그램 열고 맨위에꺼 끌릭!설치
+
+프로그램 열고 하이드클릭
+
+파일 뉴 자바프로젝트 
+프로젝트이름 -> 숫자먼저 안됨 이름만들기
+꺽쇠아래 src이하는 삭제하기
+src 우클릭 뉴에서 class 선택
+이름만 쓰고 만들기
+윈도우에 프리퍼런스 베이직에서 텍스트폰트 font검색 컬러앤폰트  더블클릭 글씨체 변경
+
+#메인함수 : 프로그램을 실행 시킬때 실행
+	public static void main(String args[])
+
+
+
+;세미콜론 : 결과값을 보여주는 구문
+"print문 사용" 이라는 문장을 출력하라
+System.out.print("print문 사용") ctr f11 실행!
+
+신텍스에러 - 괄호의 짝이 안맞거나 세미콜론 빠졌을시 뜸
+ln을 붙이면 출력을 완료한 후에 다음줄로 자동으로 넘어감
+
+"\n" : 다음줄로 넘어가서 출력을 계속 한다
+System.out.println("print문 사용")>> print대신 println 사용시 줄바꿈가능
+
+<<<<<<<<<*단축키 "sysout치고 ctl space" -> System.out.println(); 자동생성>>>>>>>
+
+콘솔창에서 상태확인
+구글에서 
+f11써서 새로고침!
+
+<<<<<<<<<*ctl+ / : 주석쓸때 단축키>>>>>>>>>>>
+*메인작성 단축키<<<<<<<<<<<<< "main 치고 ctl space">>>>>>>>>>>>
+
+글자깨질시 - 구글에서 이클립스 한글깨짐 검색
+
+출력문에서 "+" 역할 = 출력값을 "이어붙이는" 역할
+-> System.out.println("1+2의 결과: "+(1+2));
+=>1+2의 결과: 3 로표시가됨
+
+변수(변하는숫자), 상수(변하지 않는 숫자)
+
+*타입의 종류  
+	int i;		int(integer)	정수형(소수점이 없는 숫자)
+	long l;		long		정수형(소수점이 없는 숫자)-> int형보다 표현범위가 더 넓음(java에서)
+	float f; 		float		실수형(소수점이 있는 숫자)-> 잘 안쓰임
+	double d;	double		실수형(소수점이 있는 숫자) -> float형보다 더 자세한 표현 가능
+	char c;		char(charater)	문자형
+	String s; 		string		문자열(한글은 무조건 String에 담아야함)
+상수에는 입력한 값 변경 불가능
+
+#변수응용
+	변수 선언(생성) :: [타입] [변수이름(name)]; ->타입의 종류에 적힌것들
+			=> "[타입]의 정보를 담을 수 있고, 이름이 [name]인 변수를 생성하라."
+			    ex) int num;    "int형 정보를 담을 수 있고, 이름이 num인 변수를 생성하라"
+	
+	값 저장(변경) :: [변수이름(name)] = [저장할 값];
+			=>"[name] 변수에 이 값을 저장하라."
+			  ex) num =3;   "num 변수에 3이라는 값을 저장하라"
+			=>주의점 : 선언하지 않은 변수에는 값을 저장할 수 없다.
+	
+	초기화 :: [타입] [변수이름(name)] = [저장할 값];
+			=>변수를 선언함과 동시에, 초기값을 바로 저장하게끔 하는 문법
+			 ex) int num=3; "int형의 정보를 담을 수 있고, 이름이 num인 변수를
+			   	         생성함과 동시에 num이라는 변수에 3이라는 값을 저장하라"
+
+	**입력문 6가지 	:: Scanner sc=new Scanner(System.in);   =>Scanner를 sc라는 이름으로 사용한다.
+			=>import java.util.Scanner; 	입력문 작성 시 필수로 작성할 것
+			"해당 파일에, java.util.Scanner라는 라이브러리를 포함하도록 하라."
+			라이브러리 :: "도서관", 여러 명령문들을 포함하는 "도서관"
+			int v1=sc.nextInt();		int형 변수 입력문	(nextInt에서 I 대문자)
+			long v2=sc.nextLong();	long형 변수 입력문  (nextInt에서 ㅣ 대문자)
+			float v3=sc.nextFloat();	float형 변수 입력문  (nextInt에서 F 대문자)
+			double v4=sc.nextDouble();	double형 변수 입력문  (nextInt에서 D 대문자)
+			char v5=sc.next().charAt(0);	char형 변수 입력문 ->>0부터 숫자시작 a=0 b=1 c=2
+			String v6=sc.next();		String형 변수 입력문
+
+
+
++입출력 기초문제
+이름,나이,키, 혈액형 입력받기
+입력받은 걸 그대로 출력하기 (양식 자유)
+
+
+
+2. 사칙연산 문제
+정수 2개 입력받고  +,-,*,/,% 연산의 결과를 출력하세요
+
+
+int n1, n2;
+
+
+
+=================================================================
+package 잘하자;
+
+import java.util.Scanner;
+
+public class 잘해야지 {
+	public static void main(String args[]) {
+		java.util.Scanner sc=new Scanner(System.in);
+		
+		
+		int n1, n2;
+		n1=sc.nextInt();
+//		첫번째 정수 입력받기
+		n2=sc.nextInt();
+//		두번째 정수 입력받기
+		
+		System.out.println("덧셈 결과: "+(n1+n2));
+		System.out.println("덧셈 결과: "+(n1-n2));
+		System.out.println("곱셈 결과: "+(n1*n2));
+		System.out.println("몫 나눗셈 결과: "+(n1/n2));
+		System.out.println("나머지 나눗셈 결과: "+(n1%n2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

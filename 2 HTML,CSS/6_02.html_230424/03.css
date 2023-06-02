@@ -1,0 +1,20 @@
+
+
+
+
+
+label{
+    color: rgba(24, 65, 9, 0.849);
+    font-size: 120%;
+
+}
+body{
+    text-align: center;
+    background-image: url(64.png);
+}
+h1{
+    background-color: aquamarine;
+    width:100%; 
+    text-align: center;
+    color: rgb(238, 237, 160);
+}

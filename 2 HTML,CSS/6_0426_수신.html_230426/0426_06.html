@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형 웹 설계시, 뷰 포트 명시된 meta태그 포함시켜야함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 뷰포트 :: 브라우저 창의 크기 -->
+</head>
+<style>
+img{
+    /* width,height,max-width,min-width,max-height,min-height */
+    /* width: 70%; */
+    /* img태그의 너비를 뷰포트의 70% 크기만큼 지정하라(한도X) */
+    max-width: 100%;
+    /* img태그의 너비를 뷰포트의 100% 크기만큼 지정하라(한도O) 
+    원본사진의 크기가 최대이다.*/
+    /* min-width: 80%; */
+    /* img태그의 너비를 뷰포트의 40% 크기만큼 지정하라(한도O)
+    원본 사진의 크기가 최소이다.(불편해서 잘 쓰이지 않음)*/
+}
+
+
+</style>
+<body>
+<!-- <img src="64.png"> -->
+<!-- 뷰포트 크기에따라 다른 사진이 보여지게끔한다.     -->
+    <picture>
+        <!-- srcset 속성 :: 이미지들을 2개이상 명시하여 묶어놓는 속성 -->
+        <source srcset="ponyo050.jpg"
+            media="(max-width:800px)">
+        <source srcset="free-icon-phone-552489.png"
+        media="(max-width:1500px)">
+            <img src="free-icon-phone-552489.png">
+    </picture>
+    <h1>화면을 줄여보세요.</h1>
+</body>
+</html>

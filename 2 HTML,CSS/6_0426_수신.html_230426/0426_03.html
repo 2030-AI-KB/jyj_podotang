@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annimation</title>
+</head>
+<style>
+/* transition과 annimation의 차이! */
+/* transtion :: 기본값-> 어떤행동을 취했을때 변화할 속성으로 "전환"
+annimation :: 속성 변화를 전체적으로 묶어서 변환을 줄 수 있다. */
+p{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: olivedrab;
+    border: 3px solid rgb(255, 100, 44);
+    animation-name: tran;     /*지정할 애니메이션 이름*/
+    animation-duration: 3s;       /*애니메이션 지속시간*/
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;  
+}
+/* 이름이 bigger인 애니메이션 생성 */
+/* 특정 태그에 종속적이지 않고, 변환의 행위만 정의를 해놓았다. */
+@keyframes bigger{
+from{width: 100px; height: 100px;}      /*시작 속성(0%진행)*/
+to{width: 400px; height: 400px;}        /*끝 속성(100%진행)*/
+}
+@keyframes tran{
+    0%{width: 100px;height: 100px;}
+    25%{width: 200px;height: 200px;}
+    50%{width:400px;height: 400px;}
+    75%{width:200px;height: 200px;}
+    100%{width:100px;height: 100px;}
+
+}
+
+</style>
+<body>
+    <p>사각형</p>
+</body>
+</html>

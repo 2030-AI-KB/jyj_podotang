@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <title>Audio video</title>
+</head>
+<body>
+    <p>비디오 불러오기(로컬컴퓨터 영상 끌어오기)
+    </p>
+    <video width="500" height="300" autoplay muted>         <!--video 태그-->
+        <!--controls 속성 :: 동영상의 재생바 제공-->
+        <!--aytoplay muted 속성 :: 자동으로 재생->크롬에서는 소리나면 자동재생안됨-->
+        <!--source 태그를 이용해서 동영상 삽입-->
+<source src="영상2.MOV" type="video/mp4">
+영상 나오라!! <!--동영상 지원이 원활하게 되지않을시 표시되는 문구.-->
+<!--주어진 영상을 type에 명시된 확장자로 제공-->
+    </video>
+    <br>
+<p>유튜브 영상 끌어오기(링크 끌어오기)</p>
+<!-- <vidoe width="500" height="300" controls> -->
+<iframe width="640" height="360" src="https://www.youtube.com/embed/MK5uKRY_GVg" title="골든햄스터 7마리 랜선 집들이 | 브이로그 | 햄테리어 | hamster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</vidoe>
+<br>
+<audio controls>        <!--오디오 태그-->
+<source src="실로폰.mp3" type="audio/mp3">
+소리 나오라!!       <!--오디오 파일이 원활하게 되지않을시 뜨는 문구-->
+</audio>
+<br>
+<p>유튭한번더</p>
+<iframe width="640" height="360" 
+src="https://www.youtube.com/embed/mPm30CaCs5M?autoplay=1&mute=1">
+<!--자동재생할시 src링크 뒤에 ?autoplay=1&mute=1추가-->
+</iframe>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+
+
+
+
+label{
+    color: rgba(0, 30, 165, 0.849);
+    font-size: 120%;
+    ;
+}
+body{
+    text-align: center;
+    background-image: url("ponyo050.jpg");
+}
+h1{
+    background-color: rgb(255, 255, 255);
+    width:100%; 
+    text-align: center;
+    color: rgb(116, 114, 0);
+}
+input{
+    font-size: 17px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.hi{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(36, 0, 240);
+}
+p{
+    border: 3px solid rgba(233, 255, 31, 0.493);
+    color: rgba(0, 58, 146, 0.849);
+    font-size: 120%;
+}

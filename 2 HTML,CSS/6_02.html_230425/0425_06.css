@@ -1,0 +1,52 @@
+h2{
+    text-align: center;
+}
+div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+p{
+    display: inline-block;
+    width: 100px;
+    height: 300px;
+    border: 3px solid black;
+    font-size: 25px;
+    text-align: center;
+
+    transition: background-color 1s, font-size 2s, color 2s, width 1s, height 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+/* 마우스를 갖다 대었을 경우 스타일 설정 hover */
+p#d:hover{
+    background-color: red;
+}
+p#r:hover{
+    background-color: orange;
+}
+p#m:hover{
+    background-color: yellow;
+}
+p#p:hover{
+    background-color: green;
+}
+p#s:hover{
+    background-color: blue;
+}
+p#ra:hover{
+    background-color: skyblue;
+}
+p#si:hover{
+    background-color: purple;
+}
+
+/* 마우스로 누를때 변경될 스타일 :active */
+p:active{
+    font-size: 35px;
+    color:white;
+    width: 120px;
+    height: 360px;
+}

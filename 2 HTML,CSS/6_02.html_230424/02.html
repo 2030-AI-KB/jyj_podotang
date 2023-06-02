@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>input</title>
+<!-- link태그 :: inport 역할, 외부의 파일을 포함한다. -->
+<!-- rel 속성 :: "어떤 형식의" 파일을 가져오는지 명시 -->
+<!-- href 속성 :: "무슨" 파일을 가져오는지 명시 -->
+</head>
+<body>
+    <p>input태그의 종류는 아래와 같습니다</p>
+    <form>
+        <!-- 드롭다운 :: 미리 제시된 선택지를 사용자가 선택할 수 있게끔함, 너비 높이 조절가능-->
+        <!-- select,option 태그를 사용 -->
+        <label>드롭 다운 생성</label>
+        <br>
+        <label for="email">이메일</label>
+        <input type="text" id="first_email" name="first_email" style="width: 100px;"> 
+        @
+        <!-- id :: 접근할 시 사용할 이름, name :: 실질적인 변수 이름 -->
+        <select id="sec_email" name="sec_email" style="height: 25px;">    
+            <option value="naver">naver.com</option>    <!--선택시 naver라는 값 가짐-->
+            <option value="hanmail">hanmail.net</option>    <!--선택시 hanmail라는 값 가짐-->
+            <option value="gmail">gmail.com</option>    <!--선택시 gmail라는 값 가짐-->
+        </select>
+<br>
+        <!-- button만드는 법 -->
+        <label>버튼 생성</label>
+        <button>나는 버튼입니다</button>
+        <input type="button" value="난 버튼이다 ">
+        <br>
+        <!-- 날짜 지정하여 값을 넣는input 태그 -->
+        <label>날짜 지정</label>
+        <input type="date">
+<br>
+        <!-- 색상 지정하여 값을 넣는 input태그 -->
+        <input type="color">
+<br>
+    <!-- 비밀번호 입력 태그 -->
+        <input type="password">
+<br>
+        <!-- radio입력 태그
+        name의 값이 같아야 radio태그의 입력에 지장이 없다 -->
+        <label for="use">개인정보 유효기간</label>
+            <input type="radio" id="three_month" name="use" value="three_month">
+            <label for="three_month">3개월</label>
+            <input type="radio" id="six_month" name="use" value="six_month">
+            <label for="six_month">6개월</label>
+            <input type="radio" id="nine_month" name="use" value="nine_month">
+            <label for="nine_month">9개월</label>
+            <input type="radio" id="one_year" name="use" value="one_year">
+            <label for="one_year">1년</label>
+<br>
+        <!-- checkbox입력 태그 -->
+        <!-- name의 값이 같아야 checkbox태그의 입력에 지장이 없다  -->
+        <label for="hobby">취미</label>
+        <input type="checkbox" id="sleep" name="hobby" value="sleep"
+        <label for="sleep">숙면</label>
+        <input type="checkbox" id="jogging" name="hobby" value="jogging"
+        <label for="jogging">조깅</label>
+        <input type="checkbox" id="cook" name="hobby" value="cook"
+        <label for="hobby">요리</label>
+<br>
+        
+        <!-- 파일 삽입 태그 -->
+        <input type="file">
+
+
+
+
+    </form>
+</body>
+</html>

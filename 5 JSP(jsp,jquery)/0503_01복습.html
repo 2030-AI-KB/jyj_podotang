@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이벤트 속성명 :: onclick -->
+    <!-- <button onclick="alert('지구폭발')">버튼</button>
+    <!--<p id="text" onmouseover="Print()">마우스ㄱ</p> -->
+    <button id="help">두번째 버튼입니다.</button>
+        <p id="text"></p>       <!--결과값 출력될 공간만듦-->
+    <script>
+        //이벤트(Event) :: 브라우저/사용자가 하는 행위
+            //적용방법 1) html 태그 속성으로 등록
+        // function Print(){
+        //     document.getElementById("text").innerHTML="넌 멍청이 야이야아~~"
+        // }
+            
+         // 2) 이벤트 리스너 사용
+            //이벤트 발생시, 그 처리를 전문으로 담당하는 함수 (addEventListener)
+                // 1. 이벤트 적용할 요소 장겨오기(document.getElementById())
+                let button=document.getElementById("help");
+                // 2. 당겨온 요소에 이벤트 적용
+                button.addEventListener("click", show1);    //클릭했을때 함수 show1실행
+                button.addEventListener("mouseover", show2); //무우스 가져대될때 show2실행
+                //3. 적용할 이벤트 동작 정의 (2번이랑 순서 바껴도 상관없다.)
+                function show1(){
+                    alert("누름!");
+                }
+                function show2(){
+                    document.getElementById("text").innerHTML="눌러^^"
+                }
+
+        //객체 Object
+        // let lecture={
+        //     name: "2023여성지원",
+        //     location:"KB",
+        //     time:6
+
+        //     Print: function() {
+        //         console.log(`과정기간은 : ${this.time}개월 입니다`);
+        //         //this를 안 붙이고 변수값을 불러오면, 자기 자신의 외부에서 찾게된다.
+        //         //객체안의 필드값을 불러올때는 반드시 this사용해야한다.
+        //     }
+        // };
+
+        // let classes=new Object();   //객체의 틀만 classes에게 부여
+        //     // let classes{
+        //     // }
+        //     classes.name="2030여성지원";    //name속성 자동으로 추가 및 초기화!!!!
+        //     classes.location="KB";
+        //     classes.time=6;
+
+        //     //필드 접근방법
+        //     console.log("이름 : "+lecture.name);
+        //     console.log("장소 : "+lecture["location"]);
+        //     //메소드 접근방법
+        //     lecture.Print();
+
+
+            
+
+    </script>
+</body>
+</html>

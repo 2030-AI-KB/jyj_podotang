@@ -1,0 +1,62 @@
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash (master)
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/Git bash/.git/
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash (master)
+$ git clone https://github.com/2030-AI-KB/jyj_podotang.git
+Cloning into 'jyj_podotang'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+->생성된 폴더로 들어가서 git bash 다시 오픈
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (main)
+$ git branch newfile
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git branch -a
+* haha
+  main
+  newfile
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git branch newfile
+fatal: a branch named 'newfile' already exists
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git add .
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git config user.name "podotang"
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git config user.email "syj6180@naver.com"
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git commit -m "마침내"
+[haha 0c5a538] 마침내
+ 2 files changed, 2 insertions(+)
+ create mode 160000 newfile
+ create mode 100644 "\354\231\200\354\237\210\354\237\210.txt"
+
+User@DESKTOP-GQ7115L MINGW64 ~/Desktop/Git bash/jyj_podotang (haha)
+$ git push https://github.com/2030-AI-KB/jyj_podotang.git haha
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2030-AI-KB/jyj_podotang.git
+   116c0f7..0c5a538  haha -> haha

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제2</title>
+</head>
+<body>
+    <script>
+        let name=prompt("이름을 입력하세요", "name");
+        let age=prompt("나이를 입력하세요", "age");
+        let pass=confirm("여성이십니까? 맞다면, 확인을 눌러주시기 바랍니다.");
+
+        if(pass===true){
+            document.write("이름 : "+name+"<br>"+"나이 : "
+            +age+"<br>"+"성별 : 여성"+"<br>"+"<br>"+"환영합니다!"
+            +"<br>"+"2030 여성지원 과정에 지원 가능하십니다!");
+        }
+        else{
+            document.write("이름 : "+name+"<br>"+"나이 : "
+            +age+"<br>"+"성별 : 그 외 "+"<br>"+"<br>"+"지원 대상자가 아닙니다.");
+        }
+
+
+    </script>
+</body>
+</html>

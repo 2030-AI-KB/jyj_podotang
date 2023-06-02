@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제어렵다;;</title>
+</head>
+<body>
+    <script>
+        let sub_score=[];
+        for(let i=0;i<5;i++){
+            switch(i){
+                case 0:
+                    let a=prompt("국어성적 입력하시오",100);
+                    sub_score.push(a);
+                    break;
+                case 1:
+                    let b=prompt("영어성적 입력하시오",100);
+                    sub_score.push(b);
+                    break;
+                case 2:
+                    let c=prompt("수학성적 입력하시오",100);
+                    sub_score.push(c);
+                    break;
+                case 3:
+                    let d=prompt("사회성적 입력하시오",100);
+                    sub_score.push(d);
+                    break;
+                case 4:
+                    let e=prompt("과학성적 입력하시오",100);
+                    sub_score.push(e);
+                    break;
+            }
+        }
+        document.write("국어성적: "+sub_score[0]+"good<br>");
+        document.write("영어성적: "+sub_score[1]+"good<br>");
+        document.write("수학성적: "+sub_score[2]+"good<br>");
+        document.write("사회성적: "+sub_score[3]+"good<br>");
+        document.write("과학성적: "+sub_score[4]+"good<br>");
+
+        function Great(sub_score){
+            let answer = 0;
+            let sum = 0;
+            for(let j=0;j<sub_score.length;j++){
+                sum= sum+ sub_score[j];
+            }
+            return sum/sub_score.length;
+        }
+
+        if(sub_score>=60){
+            document.write(sub_score+1)}
+
+
+
+
+
+
+
+
+    </script>    
+</body>
+</html>
